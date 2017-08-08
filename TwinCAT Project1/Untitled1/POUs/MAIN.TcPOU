@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.3">
+  <POU Name="MAIN" Id="{a47dc8a5-5d21-42c2-aed8-8d9b580ca99a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+    PlcVarBool    AT %MX0.0  : BOOL := TRUE;
+    PlcVarInt     AT %MW1    : INT := 1234;
+    PlcVarString  AT %MD3    : STRING := 'Hello Automation';
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
